@@ -25,7 +25,7 @@ document.getElementById('calculate3').addEventListener('click', function(){
     const montante = (document.getElementById('fee3').value);
     const time = document.getElementById('time3').value;
  
-    const anual = (montante - value) / (value * time)
+    const anual = ((montante / value)**(1 / time)) - 1
     const total = anual * 100
 
     document.getElementById('total3').innerHTML = total.toFixed(3) + "%";
