@@ -14,7 +14,7 @@ document.getElementById('calculate2').addEventListener('click', function(){
     const fee = (document.getElementById('fee2').value) / 100;
     const time = document.getElementById('time2').value;
 
-    const total = value / (1 + fee * time);
+    const total = value / (1 + fee)**time;
 
     document.getElementById('total2').innerHTML = ("R$ " + total.toFixed(2).replace('.', ','));
 });
